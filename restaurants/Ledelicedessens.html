@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesmenu.css">
+    <link rel="stylesheet" href="../sass/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,13 +12,16 @@
 <body>
     <header>
         <h1>ohmyfood</h1>
-        <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
     </header>
     <img id="img-restaurant" src="../asset/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
     <section class="carte-restaurant">
         <div class="titre">
             <h2>Le délice des sens</h2>
-            <i class="fa-regular fa-heart"></i>
+            <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
         </div>
         <div class="choix-carte">
             <H3>ENTREES</H3>
@@ -34,13 +37,19 @@
                     <h4>Bouchée de homard croustillant </h4>
                     <p>Et sa farandole de petits légumes</p>
                 </div>
-                <div class="prix" >35€</div>
+                <div class="animation-prix">
+                    <span class="prix">35€</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div><div class="description">
                 <div class="choix">
                     <h4>Poulet rôti aux herbes de Provence </h4>
                     <p>Et sa crème de truffe</p>
                 </div>
-                <div class="prix">20€</div>
+                <div class="animation-prix">
+                    <span class="prix">20€</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
         </div>
         <div class="choix-carte">
@@ -50,20 +59,29 @@
                     <h4>Poulet rôti aux herbes de Provence </h4>
                     <p>Et sa crème de truffe</p>
                 </div>
-                <div class="prix">40€</div>
+                <div class="animation-prix">
+                    <span class="prix">40€</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
             <div class="description">
                 <div class="choix">
                     <h4>Langouste rôtie </h4>
                     <p>Et ses légumes de saison</p>
                 </div>
-                <div class="prix">35€</div>
+                <div class="animation-prix">
+                    <span class="prix">35€</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div><div class="description">
                 <div class="choix">
                     <h4>Côte de bœuf Angus </h4>
                     <p>Et sa purée de panais</p>
                 </div>
-                <div class="prix">44€</div>
+                <div class="animation-prix">
+                    <span class="prix">44€</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
         </div>
         <div class="choix-carte">
@@ -73,20 +91,29 @@
                     <h4>Farandole de desserts</h4>
                     <p>Du chef</p>
                 </div>
-                <div class="prix" >18€</div>
+                <div class="animation-prix">
+                    <span class="prix">18€</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
             <div class="description">
                 <div class="choix">
                     <h4>Crème brulée </h4>
                     <p>Revisitée</p>
                 </div>
-                <div class="prix">22€</div>
+                <div class="animation-prix">
+                    <span class="prix">22€</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div><div class="description">
                 <div class="choix">
                     <h4>Tiramisu</h4>
                     <p>À la noisette</p>
                 </div>
-                <div class="prix">23€</div>
+                <div class="animation-prix">
+                    <span class="prix">23€</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
         </div>
         <div class="btn">

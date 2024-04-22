@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
 * a {
   text-decoration: none;
   color: inherit;
@@ -22,13 +21,11 @@ header {
   justify-content: center;
   height: 96.34px;
 }
-
 header h1 {
   font-family: "Shrikhand", serif;
   font-weight: 200;
   font-size: 36px;
 }
-
 header .fa-solid.fa-arrow-left {
   position: absolute;
   left: 40px;
@@ -37,7 +34,7 @@ header .fa-solid.fa-arrow-left {
 
 #img-restaurant {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 383px;
   width: 100%;
 }
@@ -66,13 +63,11 @@ header .fa-solid.fa-arrow-left {
   font-weight: 400;
   margin: 0px;
 }
-
 .choix-carte {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
 .choix-carte h3 {
   font-size: 16px;
   font-weight: 300;
@@ -82,92 +77,38 @@ header .fa-solid.fa-arrow-left {
 }
 
 .description {
+  height:69px;
   background-color: white;
   border: 1px white solid;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 69px;
-  text-overflow: ellipsis;
 }
-.choix{
-  overflow: hidden;
-  white-space:nowrap;
-  width: 100%;
-  padding: 15px;
-  position: relative;
-}
-.choix h4{
+
+.choix h4 {
+
   font-size: 18px;
   font-weight: 500;
-  margin: auto;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  
+  margin:auto;
+  margin-left: 15px;
 }
 .choix p {
-  font-size: 15px;
+  font: size 15px;
+  font-weight: 300;
   margin: auto;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  margin-left: 15px;
 }
+
 .prix {
-  font-size: 15px;
   font-weight: bold;
-  display: flex;
-  align-items: end;
-  padding: 15px;
-  z-index: 1;
-  }
+}
 
-.fa-solid.fa-circle-check{
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  color: white;
-  width:59px;
-  opacity:0;
- 
-}
-.fa-solid.fa-circle-check:hover{
-  opacity: 1;
-}
-.animation-prix{
-  border: 1px solid;
-  display: flex;
-  height: 100%;
-  margin: -61px;
-  transition: 400ms;
-  &:hover{
-    transform: translateX(-60px);
-  }
-  
-}
-.fa-heart {
-  font-size: 21px;
-  &.fa-regular {
-    position: absolute;
-  }
-
-  &.fa-solid {
-    position: relative;
-    opacity: 0;
-    transition: opacity 400ms;
-    &:hover {
-      color: #9356DC;
-      opacity: 1;
-    }
-  }
-}
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .btn .btn-commander {
   color: white;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -177,11 +118,6 @@ header .fa-solid.fa-arrow-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 400ms;
-  &:hover{
-    transform: scale(1.2);
-    opacity:0.7;
-  }
 }
 
 footer {
@@ -221,11 +157,10 @@ footer span {
   font-weight: 400;
   font-size: 18px;
 }
-@media (max-width: 1024px){
 
 @media (max-width: 767.98px) {
   body {
-    max-width: 767.98px;
+    max-width: 767.98pxpx;
     width: 100%;
     margin: auto;
     box-sizing: border-box;
@@ -285,4 +220,4 @@ footer span {
     font-weight: 400;
     font-size: 18px;
   }
-} /*# sourceMappingURL=menu.css.map */
+}/*# sourceMappingURL=menu.css.map */
