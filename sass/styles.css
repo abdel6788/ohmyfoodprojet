@@ -124,6 +124,9 @@ body {
 .fonctionnement .choix i {
   margin-left: 10px;
   font-size: 20px;
+  &:hover {
+    color: #9356DC;
+  }
 }
 .fonctionnement .choix p {
   font-size: 16px;

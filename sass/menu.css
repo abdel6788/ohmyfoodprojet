@@ -3,9 +3,10 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  
 }
 
-* a {
+ a {
   text-decoration: none;
   color: inherit;
 }
@@ -36,7 +37,7 @@ header .fa-solid.fa-arrow-left {
 }
 
 #img-restaurant {
-  -o-object-fit: cover;
+  object-position:center;
   object-fit: cover;
   height: 383px;
   width: 100%;
@@ -63,6 +64,7 @@ header .fa-solid.fa-arrow-left {
 
 .titre h2 {
   font-family: "Shrikhand", serif;
+  font-size: 28px;
   font-weight: 400;
   margin: 0px;
 }
@@ -80,71 +82,59 @@ header .fa-solid.fa-arrow-left {
   width: 40px;
   margin: 0px;
 }
-
-.description {
+.description{
   background-color: white;
-  border: 1px white solid;
-  border-radius: 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 69px;
-  text-overflow: ellipsis;
+  padding:15px;
+  border-radius:15px;
+  box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+
+  overflow: hidden;
+}
+.description:hover .animation-prix{
+  margin-right: -1rem;
 }
 .choix{
-  overflow: hidden;
-  white-space:nowrap;
-  width: 100%;
-  padding: 15px;
-  position: relative;
-}
-.choix h4{
-  font-size: 18px;
-  font-weight: 500;
-  margin: auto;
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  
+  flex: 1;
+}
+.choix h4 {
+  margin: auto;
+  font-size:18px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .choix p {
-  font-size: 15px;
   margin: auto;
+  font-size: 15px;
+  font-weight: 300;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .prix {
-  font-size: 15px;
   font-weight: bold;
   display: flex;
-  align-items: end;
-  padding: 15px;
-  z-index: 1;
-  }
+  align-items: flex-end;
+  padding-left: 10px;
+  transition-duration: .5s;
+}
+
+.animation-prix {
+display: flex;
+background-color: #99E2D0;
+margin: -1rem -5rem -1rem 1rem;
+transition-duration:400ms;
+}
 
 .fa-solid.fa-circle-check{
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
   color: white;
-  width:59px;
-  opacity:0;
- 
-}
-.fa-solid.fa-circle-check:hover{
-  opacity: 1;
-}
-.animation-prix{
-  border: 1px solid;
   display: flex;
-  height: 100%;
-  margin: -61px;
-  transition: 400ms;
-  &:hover{
-    transform: translateX(-60px);
-  }
-  
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .fa-heart {
   font-size: 21px;
@@ -157,7 +147,7 @@ header .fa-solid.fa-arrow-left {
     opacity: 0;
     transition: opacity 400ms;
     &:hover {
-      color: #9356DC;
+      color:rgba(147,86,220,1);
       opacity: 1;
     }
   }
@@ -222,8 +212,18 @@ footer span {
   font-size: 18px;
 }
 @media (max-width: 1024px){
+  body {
+    max-width:1024px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .carte-restaurant{
+    padding:20px 13px;
+  }
+}
 
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px){
   body {
     max-width: 767.98px;
     width: 100%;
@@ -234,8 +234,11 @@ footer span {
     font-size: 30px;
   }
   header .fa-solid.fa-arrow-left {
-    left: 17px;
-    top: 17px;
+    left: 28px;
+    top: 33px;
+  }
+  #img-restaurant{
+    object-position:center;
   }
   .carte-restaurant {
     display: flex;
@@ -280,9 +283,9 @@ footer span {
     align-items: flex-start;
     gap: 10px;
   }
-  footer span {
+  footer .logo {
     font-family: "Shrikhand", serif;
     font-weight: 400;
     font-size: 18px;
   }
-} /*# sourceMappingURL=menu.css.map */
+}
